@@ -1,0 +1,19 @@
+/* ========= logo ========================== */
+
+.logo__first,
+.logo__second {
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__first {
+  color: var(--color-active);
+}
+
+.logo__second {
+  color: var(--color-logo);
+}

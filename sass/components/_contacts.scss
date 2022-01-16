@@ -1,0 +1,48 @@
+/* =========== Contacts ============ */
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  /* margin-right: 15px; */
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__icon-envelope,
+  &__icon-smartphone {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--secondary-text);
+    align-items: center;
+  }
+}
+
+.contacts-list__link {
+  color: var(--secondary-text);
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+  }
+}
+
+.contacts-list__link:hover .contacts-list__icon-envelope,
+.contacts-list__link:focus .contacts-list__icon-envelope,
+.contacts-list__link:hover .contacts-list__icon-smartphone,
+.contacts-list__link:focus .contacts-list__icon-smartphone {
+  fill: var(--color-active);
+}

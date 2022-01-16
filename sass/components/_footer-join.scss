@@ -1,0 +1,56 @@
+/* ======footer join ========= */
+.social {
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: var(--background);
+
+    display: block;
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+
+  margin-left: 0;
+  padding: 0;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 0px solid transparent;
+    fill: var(--background);
+    background: var(--background-icon-footer);
+    padding-bottom: 0;
+
+    transition-property: fill, background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    fill: var(--background);
+    background-color: var(--color-active);
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}

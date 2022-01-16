@@ -1,0 +1,34 @@
+/* ========== Hero ============ */
+
+.hero {
+  max-width: 1600px;
+  background-color: var(--background-hero);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url(../images/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    width: 696px;
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background);
+  }
+}
