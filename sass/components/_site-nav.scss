@@ -2,12 +2,22 @@
 
 .nav-list,
 .nav {
-  display: flex;
-  align-items: center;
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-list {
-  margin-left: 93px;
+  @media screen and(min-width:768px) {
+    margin-left: 88px;
+    margin-right: 84px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+    margin-right: 0px;
+  }
 
   &__link {
     display: block;
@@ -37,17 +47,17 @@
   color: var(--color-active);
   font-weight: bold;
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: 0;
 
-    height: 4px;
-    background-color: var(--color-active);
-    border-radius: 2px;
-  }
+  //   height: 4px;
+  //   background-color: var(--color-active);
+  //   border-radius: 2px;
+  // }
 }
 
 .nav-list__link:hover,

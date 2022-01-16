@@ -14,12 +14,15 @@
 }
 
 .team-list {
-  display: flex;
-  padding-bottom: 94px;
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
   }
+
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .team-cards {
@@ -46,5 +49,11 @@
     padding-bottom: 16px;
     color: var(--secondary-text);
     font-weight: 500;
+  }
+}
+
+.team-list__item {
+  @media screen and(min-width:768px) {
+    flex-basis: 50%;
   }
 }

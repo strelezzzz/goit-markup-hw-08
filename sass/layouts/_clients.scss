@@ -1,7 +1,10 @@
 /* ============== clients =========== */
 .clients-list {
-  display: flex;
-  padding-bottom: 94px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+  }
 
   &__link {
     display: flex;
@@ -37,4 +40,10 @@
 
   padding-bottom: 50px;
   padding-top: 94px;
+}
+
+.clients__item {
+  @media screen and(min-width:768px) {
+    width: 100%/3;
+  }
 }

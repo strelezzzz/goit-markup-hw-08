@@ -1,12 +1,14 @@
 /* =========== Contacts ============ */
 
 .contacts-list {
-  display: flex;
-  align-items: center;
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: auto;
+  }
 
   padding: 0;
-  /* margin-right: 15px; */
-  margin-left: auto;
 
   &__item:not(:last-child) {
     margin-right: 50px;

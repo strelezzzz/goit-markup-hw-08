@@ -1,13 +1,16 @@
 /* ======== about ============== */
 
 .about {
-  display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
+
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__text {
     color: var(--secondary-text);
@@ -29,5 +32,15 @@
     padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
+  }
+}
+
+.about__item {
+  @media screen and(min-width:768px) {
+    flex-basis: 50%;
+  }
+
+  @media screen and(min-width:1200px) {
+    flex-basis: 25%;
   }
 }
