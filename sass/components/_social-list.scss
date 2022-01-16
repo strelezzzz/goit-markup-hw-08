@@ -6,6 +6,9 @@
   padding-bottom: 30px;
   margin-right: 32px;
   margin-left: 32px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list__link {
