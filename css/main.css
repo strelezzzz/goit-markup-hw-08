@@ -357,6 +357,11 @@ body {
   max-height: 120px;
 }
 
+.about__title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 767px) {
   .about__title {
     text-align: center;
@@ -452,12 +457,26 @@ body {
 }
 
 .team__title {
-  padding-bottom: 50px;
-  padding-top: 94px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.179;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    padding-bottom: 50px;
+    padding-top: 94px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -610,22 +629,35 @@ body {
 .clients__title {
   text-align: center;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 1.179;
-  padding-top: 60px;
-  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.179;
+    padding-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200) {
   .clients__title {
     padding-top: 94px;
+    padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }
 }
 
-.clients-list__item:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients-list__item {
+    margin-top: 30px;
+  }
+  .clients-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .clients-list__item:nth-child(n + 5) {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -655,6 +687,7 @@ body {
   display: block;
   padding-top: 60px;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .logo__first--footer {
