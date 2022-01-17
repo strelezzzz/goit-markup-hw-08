@@ -1,8 +1,15 @@
 /* ======footer join ========= */
 .social {
-  margin-left: 70px;
-  margin-top: 72px;
-  margin-bottom: 100px;
+  @media screen and(max-width:767px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+  }
 
   &__title {
     font-size: 14px;

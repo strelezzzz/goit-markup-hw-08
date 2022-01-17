@@ -53,11 +53,14 @@
 }
 
 .buttons--hero {
-  margin-bottom: 200px;
+  margin-bottom: 118px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 200px;
+  }
 }
 
 .email-button,
@@ -96,4 +99,13 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.email-button {
+  @media screen and (max-width: 767px) {
+    // display: block;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

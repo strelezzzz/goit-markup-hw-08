@@ -1,4 +1,10 @@
 /* ======= Footer =============================== */
+.address {
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
+}
+
 .footer {
   background-color: var(--background-footer);
 
@@ -24,8 +30,10 @@
 }
 
 .address-list {
-  padding-bottom: 60px;
-  width: 231px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    width: 231px;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 4px;
