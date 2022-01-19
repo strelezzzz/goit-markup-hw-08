@@ -95,6 +95,10 @@ body {
   padding: 0;
 }
 
+.container--header {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .container--header {
     display: -webkit-box;
@@ -122,9 +126,9 @@ body {
 }
 
 /* ========= logo ========================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
-    display: block;
+    display: inline-block;
     margin-top: 16px;
     margin-bottom: 16px;
   }
@@ -293,6 +297,51 @@ body {
 .nav-list__link:hover,
 .nav-list__link:focus {
   color: var(--color-active);
+}
+
+.nav__button {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  right: 15px;
+}
+
+.nav__button .nav__cross {
+  display: none;
+}
+
+.nav__button.nav-is-open .nav__cross {
+  display: block;
+}
+
+.nav__button.nav-is-open .nav__menu {
+  display: none;
+}
+
+.nav__menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #0f0;
+}
+
+.nav__menu-list.nav-is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__button {
+    display: none;
+  }
 }
 
 /* ========== Hero ============ */
@@ -993,14 +1042,28 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--background);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .is-hidden {
@@ -1124,9 +1187,11 @@ body {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field__input {
-  padding-left: 42px;
-  max-height: 40px;
+@media screen and (min-width: 768px) {
+  .form-field__input {
+    padding-left: 42px;
+    max-height: 40px;
+  }
 }
 
 .form-field__input:focus {

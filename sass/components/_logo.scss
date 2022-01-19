@@ -1,7 +1,7 @@
 /* ========= logo ========================== */
 .logo {
-  @media screen and (max-width: 768px) {
-    display: block;
+  @media screen and (max-width: 767px) {
+    display: inline-block;
     margin-top: 16px;
     margin-bottom: 16px;
   }

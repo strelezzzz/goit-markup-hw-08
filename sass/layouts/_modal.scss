@@ -16,8 +16,16 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  @media screen and (max-width: 767px) {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -143,8 +151,10 @@
 }
 
 .form-field__input {
-  padding-left: 42px;
-  max-height: 40px;
+  @media screen and (min-width: 768px) {
+    padding-left: 42px;
+    max-height: 40px;
+  }
   &:focus {
     outline-color: 1px solid var(--color-active);
     border: 1px solid var(--color-active);
