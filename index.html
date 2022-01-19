@@ -16,74 +16,100 @@
     
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="container container--header">
-            <!-- Навигация -->
-            <nav class="nav">
-                <a  class="logo" href="index.html">
-                    <span class="logo__first">Web</span>
-                    <span class="logo__second">Studio</span>
-                </a>
-                <button 
-                    type="button"
-                    class="nav__button"
-                    aria-expanded="false"
-                    aria-controls="nav"
-                    data-menu-button 
-                >
-                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
-                        <use class="nav__menu" href="./images/icons.svg#icon-menu"></use>
-                        <use class="nav__cross" href="./images/icons.svg#icon-cross"></use>
-                    </svg>
-                </button>
-                <div class="nav__menu-list" data-menu>
-                    нужно все в один див запихнуть, кроме лого
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="index.html" class="nav-list__link nav-list__link--active">Студия</a>
+        
+            <div class="container container--header">
+                <!-- Навигация -->
+                <nav class="nav">
+                    <button type="button" class="nav__button" aria-expanded="false" aria-controls="nav" data-menu-button>
+                        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                            <use class="nav__menu" href="./images/icons.svg#icon-menu"></use>
+                            <use class="nav__cross" href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <a  class="logo" href="index.html">
+                        <span class="logo__first">Web</span>
+                        <span class="logo__second">Studio</span>
+                    </a>
+                    
+                    
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="index.html" class="nav-list__link nav-list__link--active">Студия</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="portfolio.html" class="nav-list__link ">Портфолио</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Контакты -->
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-list__link" >
+                            <svg class="contacts-list__icon-envelope" width="16" height = "12" >
+                                <use href="images/icons.svg#icon-envelope" ></use>                            
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="nav-list__item">
-                        <a href="portfolio.html" class="nav-list__link ">Портфолио</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">Контакты</a>
+                    <li class="contacts-list__item">
+                        <a href="tel:+380961111111" class="contacts-list__link">
+                            <svg class="contacts-list__icon-smartphone" width="10" height="16">
+                                <use href="images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <!-- Контакты -->
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a href="mailto:info@devstudio.com" class="contacts-list__link" >
-                        <svg class="contacts-list__icon-envelope" width="16" height = "12" >
-                            <use href="images/icons.svg#icon-envelope" ></use>                            
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a href="tel:+380961111111" class="contacts-list__link">
-                        <svg class="contacts-list__icon-smartphone" width="10" height="16">
-                            <use href="images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-            <!-- Socials links for mobile-menu -->
-            <ul class="nav-socials">
-                <li class="nav-socials__item">
-                    <a class="nav-socials__link" href="##">Instagram</a>
-                </li>
-                <li class="nav-socials__item">
-                    <a class="nav-socials__link" href="##">Twitter</a>
-                </li>
-                <li class="nav-socials__item">
-                    <a class="nav-socials__link" href="##">Facebook</a>
-                </li>
-                <li class="nav-socials__item">
-                    <a class="nav-socials__link" href="##">LinkedIn</a>
-                </li>
-            </ul>
+                <!-- mobile-menu -->
+                <div class="mobile-menu" data-menu>
+                <!-- Navigation -->
+                    <nav class="mob-nav">
+                        <ul class="mob-nav-list">
+                            <li class="mob-nav-list__item">
+                                <a href="index.html" class="mob-nav-list__link mob-nav-list__link--active">Студия</a>
+                            </li>
+                            <li class="mob-nav-list__item">
+                                <a href="portfolio.html" class="mob-nav-list__link ">Портфолио</a>
+                            </li>
+                            <li class="mob-nav-list__item">
+                                <a href="#" class="mob-nav-list__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                <!-- Контакты -->
+                    <ul class="mob-contacts-list">
+                        <li class="mob-contacts-list__item">
+                            
+                            <a href="tel:+380961111111" class="mob-contacts-list__link">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-contacts-list__item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts-list__link mob-contacts-list__link--email">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                <!-- Socials links for mobile-menu -->
+                    <ul class="mob-social" >
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="##">Instagram</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="##">Twitter</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="##">Facebook</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a class="mob-social__link" href="##">LinkedIn</a>
+                        </li>
+                    </ul>
+                
+                </div>
         </div>
     </header>
     <main>
