@@ -319,7 +319,7 @@ body {
   background-color: transparent;
   top: 10px;
   right: 15px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav__menu:hover, .nav__menu:focus {
@@ -1327,14 +1327,6 @@ body {
 }
 
 /* ======= projects-list Portfolio  ========= */
-.projects-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .projects-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -1429,18 +1421,40 @@ body {
 
 /* ========== Studio Filters ======================= */
 .filters-list {
+  background-color: var(--background);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--background);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .filters-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filters-list__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
+  }
 }
 
 .filters-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filters-conteiner {
+  margin-bottom: 40px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */

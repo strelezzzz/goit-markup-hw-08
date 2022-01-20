@@ -1,13 +1,30 @@
 /* ========== Studio Filters ======================= */
 
 .filters-list {
-  display: flex;
   background-color: var(--background);
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 94px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
   }
+}
+
+.filters-conteiner {
+  margin-bottom: 40px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
