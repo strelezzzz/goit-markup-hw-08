@@ -1,6 +1,7 @@
 /* ----------------- Our Team ------------- */
 .team {
   background-color: var(--bacground-button);
+  padding-bottom: 60px;
 
   &__title {
     text-align: center;
@@ -26,7 +27,8 @@
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+    margin: -15px;
+    justify-content: center;
   }
 
   // &__item:not(:last-child) {
@@ -63,6 +65,8 @@
 
 .team-list__item {
   @media screen and(min-width:768px) {
-    flex-basis: 50%;
+    max-width: 354px;
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
   }
 }

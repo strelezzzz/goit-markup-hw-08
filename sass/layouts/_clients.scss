@@ -1,19 +1,24 @@
 /* ============== clients =========== */
+.clients {
+  @media screen and(max-width:1199px) {
+    padding: 60px 0;
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px 0;
+  }
+}
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  @media screen and(min-width:768px) {
-    padding-bottom: 94px;
+  @media screen and(max-width:1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
   &__link {
-    @media screen and(max-width:767px) {
-      width: 210px;
+    @media screen and(min-width: 480px) {
+      padding: 16px 52px;
     }
     display: flex;
-    width: 170px;
-    height: 92px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border-clients);
@@ -42,10 +47,10 @@
   text-align: center;
   font-weight: bold;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 28px;
     line-height: 1.179;
-    padding-top: 60px;
+    margin-bottom: 30px;
   }
 
   @media screen and(min-width:1200) {
@@ -58,18 +63,14 @@
 
 .clients-list__item {
   @media screen and(max-width:767px) {
-    margin-top: 30px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(n + 5) {
-      margin-bottom: 60px;
-    }
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+    justify-content: center;
+    align-items: center;
   }
 
-  @media screen and(min-width:768px) {
-    width: 100%/3;
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
   }
 }

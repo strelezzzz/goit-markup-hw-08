@@ -1,10 +1,17 @@
 /* ======== Navigation ========================== */
 
-.nav-list,
 .nav {
-  @media screen and(min-width:768px) {
+  display: flex;
+}
+.nav-list {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    min-width: 294px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 88px;
+    margin-right: 84px;
   }
 }
 
@@ -13,10 +20,9 @@
     display: none;
   }
 
-  @media screen and(min-width:768px) {
-    margin-left: 88px;
-    margin-right: 84px;
-  }
+  // @media screen and(min-width:768px) and(max-width:1199px) {
+
+  // }
 
   @media screen and(min-width:1200px) {
     margin-left: 93px;
@@ -41,10 +47,6 @@
   @media screen and(min-width:768px) {
     &__item {
       position: relative;
-    }
-
-    &__item:not(:last-child) {
-      margin-right: 50px;
     }
   }
 }

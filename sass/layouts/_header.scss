@@ -1,8 +1,19 @@
 .container--header {
   position: relative;
-  @media screen and (min-width: 768px) {
+
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    min-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 768px;
     display: flex;
     align-items: center;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

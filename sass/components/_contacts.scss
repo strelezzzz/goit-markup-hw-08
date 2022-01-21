@@ -5,8 +5,13 @@
     display: none;
   }
 
-  &__item {
-    @media screen and(min-width:768px) {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and(min-width:768px) and (max-width: 1199px) {
       margin-bottom: 10px;
     }
   }
@@ -21,7 +26,9 @@
   padding: 0;
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and(min-width:1200px) {
+      margin-right: 50px;
+    }
   }
 
   &__icon-envelope,
