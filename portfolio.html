@@ -60,9 +60,9 @@
                 </li>
             </ul>
             <!-- mobile-menu -->
-            <div class="mobile-menu" data-menu>
+            <div class="mobile-menu" data-menu >
                 <!-- Navigation -->
-                <nav class="mob-nav">
+                <nav class="mob-nav" id="nav">
                     <ul class="mob-nav-list">
                         <li class="mob-nav-list__item">
                             <a href="index.html" class="mob-nav-list__link ">Студия</a>
@@ -92,16 +92,16 @@
                 <!-- Socials links for mobile-menu -->
                 <ul class="mob-social">
                     <li class="mob-social__item">
-                        <a class="mob-social__link" href="##">Instagram</a>
+                        <a class="mob-social__link" href="#">Instagram</a>
                     </li>
                     <li class="mob-social__item">
-                        <a class="mob-social__link" href="##">Twitter</a>
+                        <a class="mob-social__link" href="#">Twitter</a>
                     </li>
                     <li class="mob-social__item">
-                        <a class="mob-social__link" href="##">Facebook</a>
+                        <a class="mob-social__link" href="#">Facebook</a>
                     </li>
                     <li class="mob-social__item">
-                        <a class="mob-social__link" href="##">LinkedIn</a>
+                        <a class="mob-social__link" href="#">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -142,10 +142,11 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-1.jpg" alt="Проект 1" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project1.jpg , ./images/portfolio/desktop-project1@2x.jpg 2x" media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project1.jpg  , ./images/portfolio/tablet-project1@2x.jpg 2x" media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project1.jpg  , ./images/portfolio/mobile-project1@2x.jpg 2x" media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project1.jpg" alt="Проект 1">
+                                    <source srcset="./images/portfolio/desktop-project1.jpg 1x, ./images/portfolio/desktop-project1@2x.jpg 2x" media="(min-width:1200px)">
+                                    <source srcset="./images/portfolio/tablet-project1.jpg  1x, ./images/portfolio/tablet-project1@2x.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/portfolio/mobile-project1.jpg  1x, ./images/portfolio/mobile-project1@2x.jpg 2x" media="(min-width:320px)">
+                                    <img class="projects-list__img" srcset="./images/portfolio/desktop-project1.jpg 1x, ./images/portfolio/desktop-project1@2x.jpg 2x" 
+                                    src ="./images/portfolio/desktop-project1.jpg" alt="Проект 1">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
@@ -164,13 +165,15 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-2.jpg" alt="Проект 2" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project2.jpg , ./images/portfolio/desktop-project2@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project2.jpg 1x, ./images/portfolio/desktop-project2@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project2.jpg  , ./images/portfolio/tablet-project2@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project2.jpg  1x, ./images/portfolio/tablet-project2@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project2.jpg  , ./images/portfolio/mobile-project2@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project2.jpg  1x, ./images/portfolio/mobile-project2@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project2.jpg" alt="Проект 2">
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project2.jpg 1x, ./images/portfolio/desktop-project2@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project2.jpg" alt="Проект 2">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
@@ -189,13 +192,15 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-3.jpg" alt="Проект 3" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project3.jpg , ./images/portfolio/desktop-project3@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project3.jpg 1x, ./images/portfolio/desktop-project3@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project3.jpg  , ./images/portfolio/tablet-project3@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project3.jpg  1x, ./images/portfolio/tablet-project3@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project3.jpg  , ./images/portfolio/mobile-project3@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project3.jpg  1x, ./images/portfolio/mobile-project3@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project3.jpg" alt="Проект 3">
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project3.jpg 1x, ./images/portfolio/desktop-project3@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project3.jpg" alt="Проект 3">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
@@ -214,13 +219,15 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-4.jpg" alt="Проект 4" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project4.jpg , ./images/portfolio/desktop-project4@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project4.jpg 1x, ./images/portfolio/desktop-project4@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project4.jpg  , ./images/portfolio/tablet-project4@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project4.jpg  1x, ./images/portfolio/tablet-project4@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project4.jpg  , ./images/portfolio/mobile-project4@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project4.jpg  1x, ./images/portfolio/mobile-project4@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project4.jpg" alt="Проект 4">
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project4.jpg 1x, ./images/portfolio/desktop-project4@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project4.jpg" alt="Проект 4">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
@@ -239,14 +246,16 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-5.jpg" alt="Проект 5" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project5.jpg , ./images/portfolio/desktop-project5@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project5.jpg 1x, ./images/portfolio/desktop-project5@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project5.jpg  , ./images/portfolio/tablet-project5@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project5.jpg  1x, ./images/portfolio/tablet-project5@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project5.jpg  , ./images/portfolio/mobile-project5@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project5.jpg  1x, ./images/portfolio/mobile-project5@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project5.jpg" alt="Проект 5">
-                                </picture>                                
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project5.jpg 1x, ./images/portfolio/desktop-project5@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project5.jpg" alt="Проект 5">
+                                </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -264,13 +273,15 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-6.jpg" alt="Проект 6" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project6.jpg , ./images/portfolio/desktop-project6@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project6.jpg 1x, ./images/portfolio/desktop-project6@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project6.jpg  , ./images/portfolio/tablet-project6@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project6.jpg  1x, ./images/portfolio/tablet-project6@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project6.jpg  , ./images/portfolio/mobile-project6@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project6.jpg  1x, ./images/portfolio/mobile-project6@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project6.jpg" alt="Проект 6">
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project6.jpg 1x, ./images/portfolio/desktop-project6@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project6.jpg" alt="Проект 6">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
@@ -289,14 +300,16 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-7.jpg" alt="Проект 7" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project7.jpg , ./images/portfolio/desktop-project7@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project7.jpg 1x, ./images/portfolio/desktop-project7@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project7.jpg  , ./images/portfolio/tablet-project7@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project7.jpg  1x, ./images/portfolio/tablet-project7@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project7.jpg  , ./images/portfolio/mobile-project7@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project7.jpg  1x, ./images/portfolio/mobile-project7@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project7.jpg" alt="Проект 7">
-                                </picture>                                
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project7.jpg 1x, ./images/portfolio/desktop-project7@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project7.jpg" alt="Проект 7">
+                                </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -314,14 +327,16 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-8.jpg" alt="Проект 8" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project8.jpg , ./images/portfolio/desktop-project8@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project8.jpg 1x, ./images/portfolio/desktop-project8@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project8.jpg  , ./images/portfolio/tablet-project8@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project8.jpg  1x, ./images/portfolio/tablet-project8@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project8.jpg  , ./images/portfolio/mobile-project8@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project8.jpg  1x, ./images/portfolio/mobile-project8@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project8.jpg" alt="Проект 8">
-                                </picture>                                
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project8.jpg 1x, ./images/portfolio/desktop-project8@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project8.jpg" alt="Проект 8">
+                                </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -339,13 +354,15 @@
                             <div class="projects-list__overley">
                                 <!-- <img src="./images/portfolio/project-9.jpg" alt="Проект 9" > -->
                                 <picture class="projects-list__img">
-                                    <source srcset="./images/portfolio/desktop-project9.jpg , ./images/portfolio/desktop-project9@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/desktop-project9.jpg 1x, ./images/portfolio/desktop-project9@2x.jpg 2x"
                                         media="(min-width:1200px)">
-                                    <source srcset="./images/portfolio/tablet-project9.jpg  , ./images/portfolio/tablet-project9@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/tablet-project9.jpg  1x, ./images/portfolio/tablet-project9@2x.jpg 2x"
                                         media="(min-width:768px)">
-                                    <source srcset="./images/portfolio/mobile-project9.jpg  , ./images/portfolio/mobile-project9@2x.jpg 2x"
+                                    <source srcset="./images/portfolio/mobile-project9.jpg  1x, ./images/portfolio/mobile-project9@2x.jpg 2x"
                                         media="(min-width:320px)">
-                                    <img class="projects-list__img" srcset="./images/portfolio/mobile-project9.jpg" alt="Проект 9">
+                                    <img class="projects-list__img"
+                                        srcset="./images/portfolio/desktop-project9.jpg 1x, ./images/portfolio/desktop-project9@2x.jpg 2x"
+                                        src="./images/portfolio/desktop-project9.jpg" alt="Проект 9">
                                 </picture>
                                 <p class="projects-list__text">
                                     Технокряк это современная площадка распространения коронавируса.
