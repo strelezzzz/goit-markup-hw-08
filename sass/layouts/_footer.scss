@@ -15,8 +15,10 @@
   background-color: var(--background-footer);
 
   &__conteiner {
-    // display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
@@ -66,7 +68,7 @@
 }
 
 .tablet-foter {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
   }

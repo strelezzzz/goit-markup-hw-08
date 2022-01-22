@@ -25,6 +25,7 @@
   // }
 
   @media screen and(min-width:1200px) {
+    display: flex;
     margin-left: 93px;
     margin-right: 0px;
   }
@@ -47,6 +48,11 @@
   @media screen and(min-width:768px) {
     &__item {
       position: relative;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    &__item:not(:last-child) {
+      margin-right: 50px;
     }
   }
 }
