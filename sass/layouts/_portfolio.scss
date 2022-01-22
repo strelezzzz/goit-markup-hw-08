@@ -1,9 +1,13 @@
 /* ======= projects-list Portfolio  ========= */
-.project {
+.projects {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 738px;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
   }
 }
 
@@ -24,6 +28,14 @@
     margin: -15px;
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: 0;
+    margin-left: -30px;
+  }
+
   &__item {
     margin: 15px;
   }
@@ -39,7 +51,7 @@
   // }
 
   // &__item:nth-child(n + 7) {
-  //   margin-bottom: 94px;
+
   // }
 
   &__overley {

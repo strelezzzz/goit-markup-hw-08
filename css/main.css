@@ -298,6 +298,8 @@ body {
     padding: 0;
     margin-left: 88px;
     margin-right: 84px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1579,10 +1581,16 @@ body {
 
 /* ======= projects-list Portfolio  ========= */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project {
+  .projects {
     max-width: 738px;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin-bottom: 94px;
   }
 }
 
@@ -1611,6 +1619,19 @@ body {
         flex-wrap: wrap;
     padding: 0;
     margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: 0;
+    margin-left: -30px;
   }
 }
 
