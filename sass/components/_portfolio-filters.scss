@@ -6,6 +6,9 @@
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    max-width: 372px;
+    margin-left: auto;
+    margin-right: auto;
     &__item {
       margin-bottom: 15px;
     }
@@ -27,7 +30,7 @@
 }
 
 .filters-conteiner {
-  @media screen and (max-widht: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 60px;
   }
 
